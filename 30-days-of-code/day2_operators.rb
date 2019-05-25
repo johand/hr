@@ -32,9 +32,6 @@
 
 # 15
 
-require 'json'
-require 'stringio'
-
 def solve(meal_cost, tip_percent, tax_percent)
   tip = meal_cost * (tip_percent.to_f / 100)
   tax = meal_cost * (tax_percent.to_f / 100)

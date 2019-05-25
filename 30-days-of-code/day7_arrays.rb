@@ -28,9 +28,6 @@
 
 # 2 3 4 1
 
-require 'json'
-require 'stringio'
-
 n = gets.to_i
 
 arr = gets.rstrip.split(' ').map(&:to_i).join(' ').reverse

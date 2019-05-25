@@ -1,4 +1,5 @@
 # Task
+
 # Given an integer, n, perform the following conditional actions:
 
 # * If n is odd, print Weird
@@ -46,9 +47,6 @@
 # Sample Case 1: n == 24
 
 # n > 20 and n s even, so it isn't weird. Thus, we print Not Weird.
-
-require 'json'
-require 'stringio'
 
 N = gets.to_i
 

@@ -33,9 +33,6 @@
 # 2 x 9 = 18
 # 2 x 10 = 20
 
-require 'json'
-require 'stringio'
-
 n = gets.to_i
 
 (1..10).each { |e| puts "#{n} x #{e} = #{n * e}" }
