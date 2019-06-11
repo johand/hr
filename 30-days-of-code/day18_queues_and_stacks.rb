@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # A palindrome is a word, phrase, number, or other sequence of characters which
 # reads the same backwards and forwards. Can you determine if a given string, s,
 # is a palindrome?

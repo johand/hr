@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Write a Person class with an instance variable, age, and a constructor that

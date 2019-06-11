@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # To complete this challenge, you must save a line of input from stdin to a

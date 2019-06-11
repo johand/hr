@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Context
 
 # Given a 6 x 6 2D Array, A:

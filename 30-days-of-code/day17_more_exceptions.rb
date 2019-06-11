@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Write a Calculator class with a single method: int power(int,int). The power

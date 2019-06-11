@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Given the meal price (base cost of a meal), tip percent (the percentage of the

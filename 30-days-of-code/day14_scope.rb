@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Complete the Difference class by writing the following:

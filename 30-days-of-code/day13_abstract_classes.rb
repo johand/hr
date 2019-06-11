@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Given a Book class and a Solution class, write a MyBook class that does the

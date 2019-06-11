@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # You are given two classes, Person and Student, where Person is the base class

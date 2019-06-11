@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Complete the insert function in your editor so that it creates a new Node

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Given n names and phone numbers, assemble a phone book that maps friends'

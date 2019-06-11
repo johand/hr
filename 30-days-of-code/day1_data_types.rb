@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Complete the code in the editor below. The variables i, d, and s are already

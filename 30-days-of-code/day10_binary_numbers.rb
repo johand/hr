@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Given a base-10 integer, n, convert it to binary (base-2). Then find and print

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Task
 
 # Given an integer, n, print its first 10 multiples. Each multiple n x i (where
