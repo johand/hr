@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The array class also allows to select and return a subset of an array based on
 # some criteria defined in a block (a block is a group of code within {} that
 # accepts a variable and returns a value).
@@ -42,17 +44,17 @@
 
 def select_arr(arr)
   # select and return all odd numbers from the Array variable `arr`
-  arr.select { |e| e.odd? }
+  arr.select(&:odd?)
 end
 
 def reject_arr(arr)
   # reject all elements which are divisible by 3
-  arr.reject { |e| e % 3 == 0 }
+  arr.reject { |e| (e % 3).zero? }
 end
 
 def delete_arr(arr)
   # delete all negative elements
-  arr.delete_if { |e| e < 0 }
+  arr.delete_if { |e| e.negative? }
 end
 
 def keep_arr(arr)

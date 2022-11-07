@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Hashes, also called associative arrays, are dictionary-like data structures
 # which are similar to arrays. Instead of using integers to index an object,
 # however, hashes use any object as its index.
@@ -41,7 +43,4 @@ empty_hash = Hash.new
 
 default_hash = Hash.new(1)
 
-hackerrank = {
-  'simmy' => 100,
-  'vivmbbs' => 200
-}
+hackerrank = { 'simmy' => 100, 'vivmbbs' => 200 }

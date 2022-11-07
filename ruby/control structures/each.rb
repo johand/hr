@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Ruby offers control structures that let you iterate through its
 # collections. One such control structure is each.
 
@@ -19,7 +21,5 @@
 # end
 
 def scoring(array)
-  array.each do |user|
-    user.update_score
-  end
+  array.each(&:update_score)
 end

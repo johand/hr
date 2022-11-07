@@ -104,3 +104,13 @@ class Student < Person
     end
   end
 end
+
+input = gets.split
+first_name = input[0]
+last_name = input[1]
+id = input[2].to_i
+numScores = gets.to_i
+scores = gets.strip.split.map!(&:to_i)
+s = Student.new(first_name, last_name, id, scores)
+s.print_person
+print("\nGrade: #{s.calculate}")

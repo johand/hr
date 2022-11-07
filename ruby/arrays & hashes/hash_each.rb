@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # You've seen the control structure each used on an array. Similarly, it is
 # available for the Hash collection, as well.
 

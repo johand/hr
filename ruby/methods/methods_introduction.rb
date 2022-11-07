@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # In our previous challenges, we have been using methods (def method() .. end
 # construct) to abstract compound operations, perform data manipulations and
 # learn various concepts of the language, without talking in much detail about

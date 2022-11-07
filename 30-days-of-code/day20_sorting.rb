@@ -81,9 +81,9 @@
 # At this point the array is sorted and we print the necessary 3 lines of output
 # shown above.
 
-n = gets.strip.to_i
+gets.strip.to_i
 a = gets.strip
-a = a.split(' ').map(&:to_i)
+a = a.split.map(&:to_i)
 
 def bubble_sort(arr)
   n = arr.length

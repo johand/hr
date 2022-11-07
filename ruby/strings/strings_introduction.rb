@@ -1,4 +1,5 @@
-# coding: utf-8
+# frozen_string_literal: true
+
 # Numbers, boolean values and strings are some of the fundamental data types
 # that we have explored in our previous challenges. In this set of tutorials, we
 # turn our attention to the data type referred to as String or Text literals.
@@ -55,17 +56,17 @@
 
 def single_quote
   # single quote string here
-  puts 'Hello World and others!'
+  'Hello World and others!'
 end
 
 def double_quote
   # Double quote string here
-  puts "Hello World and others!"
+  "Hello World and others!"
 end
 
 def here_doc
   # Here doc string here
   h = <<-HERE
-    Hello world and others!
+    Hello World and others!
   HERE
 end

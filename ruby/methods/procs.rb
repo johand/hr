@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Passing blocks is one way to pass functions as arguments to other functions.
 
 # Blocks are one of the very few exceptions to the "everything is an object"
@@ -47,6 +49,6 @@ end
 
 proc_square_number = proc { |num| num**2 }
 proc_sum_array = proc { |arr| arr.sum }
-my_array = gets.split().map(&:to_i)
+my_array = gets.split.map(&:to_i)
 
 puts square_of_sum(my_array, proc_square_number, proc_sum_array)

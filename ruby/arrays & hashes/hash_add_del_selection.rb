@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # In this challenge, we will show you ways in which we can add key-value pairs
 # to Hash objects, delete keys from them, and retain them based on a logic.
 
@@ -37,7 +39,7 @@
 # * Retain all key-value pairs where keys are Integers ( clue : is_a? Integer )
 # * Delete all key-value pairs where keys are even-valued.
 
-hackerrank.store(543121, 100)
+hackerrank.store(543_121, 100)
 
 hackerrank.keep_if { |k| k.is_a? Integer }
 

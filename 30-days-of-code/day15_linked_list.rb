@@ -7,7 +7,7 @@
 # linked list referenced by head the parameter. Once the new node is added,
 # return the reference to the head node.
 
-# Note: If the head argument passed to the insert function is null, then the
+# NOTE: If the head argument passed to the insert function is null, then the
 # initial list is empty.
 
 # Input Format
@@ -81,3 +81,14 @@ class Solution
     end
   end
 end
+
+mylist = Solution.new
+head = nil
+T = gets.to_i
+
+(1..T).each do |_i|
+  data = gets.to_i
+  head = mylist.insert(head, data)
+end
+
+mylist.display(head)

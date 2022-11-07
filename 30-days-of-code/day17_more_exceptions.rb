@@ -7,7 +7,7 @@
 # result of n**p. If either n or p is negative, then the method must throw an
 # exception with the message: n and p should be non-negative.
 
-# Note: Do not use an access modifier (e.g.: public) in the declaration for your
+# NOTE: Do not use an access modifier (e.g.: public) in the declaration for your
 # Calculator class.
 
 # Input Format
@@ -54,10 +54,23 @@
 
 class Calculator
   def power(n, p)
-    if n.negative? || p.negative?
-      raise RangeError, 'n and p should be non-negative'
-    end
+    raise RangeError, 'n and p should be non-negative' if n.negative? || p.negative?
 
     n**p
+  end
+end
+
+my_calculator = Calculator.new
+
+t = gets.to_i
+
+(1..t).each do |_i|
+  n, p = gets.split.map(&:to_i)
+
+  begin
+    ans = my_calculator.power(n, p)
+    puts ans.to_i
+  rescue RangeError => e
+    puts e.message
   end
 end

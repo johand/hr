@@ -54,15 +54,19 @@
 # prints the value stored as maximumDifference, which is 4.
 
 class Difference
-  attr_reader :ary, :maximum_difference
+  attr_reader :arr, :maximum_difference
 
-  def initialize(ary)
-    @ary = ary
+  def initialize(arr)
+    @arr = arr
     @maximum_difference = maximum_difference
   end
 
   def difference
-    maximum_difference = ary.max - ary.min
-    maximum_difference
+    arr.max - arr.min
   end
 end
+
+T = gets.to_i
+arr = gets.strip.split.map!(&:to_i)
+d = Difference.new(arr)
+puts d.difference

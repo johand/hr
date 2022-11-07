@@ -19,7 +19,7 @@
 #   2. Author: a space, and then the current instance's.
 #   3. Price: a space and then the current instance's .
 
-# Note: Because these classes are being written in the same file, you must not
+# NOTE: Because these classes are being written in the same file, you must not
 # use an access modifier (e.g.: public ) when declaring MyBook or your code will
 # not execute.
 
@@ -39,7 +39,7 @@
 # Author: $author
 # Price: $price
 
-# Note: The $is prepended to variable names to indicate they are placeholders
+# NOTE: The $is prepended to variable names to indicate they are placeholders
 # for variables.
 
 # Sample Input
@@ -62,7 +62,7 @@
 class Book
   attr_accessor :title, :author
 
-  def initialize(title, author)
+  def initialize(_title, _author)
     raise 'You cannot instantiate an abstract class.'
   end
 
@@ -86,3 +86,10 @@ class MyBook < Book
     puts "Price: #{price}"
   end
 end
+
+title = gets
+author = gets
+price = gets
+
+new_novel = MyBook.new(title, author, price)
+new_novel.display

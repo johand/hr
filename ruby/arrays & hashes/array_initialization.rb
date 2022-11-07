@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # One of the most commonly used data structures in Ruby is a Ruby Array, and
 # below we see various methods of initializing a ruby array.
 

@@ -20,7 +20,7 @@
 # that creates each instance of your Person class is in the main method. Don't
 # worry if you don't understand it all quite yet!
 
-# Note: Do not remove or alter the stub code in the editor.
+# NOTE: Do not remove or alter the stub code in the editor.
 
 # Input Format
 
@@ -88,27 +88,39 @@
 class Person
   attr_accessor :age
 
-  def initialize(initialAge)
-    @age = initialAge
+  def initialize(initial_age)
+    @age = initial_age
 
-    if initialAge < 0
+    if initial_age.negative?
       puts 'Age is not valid, setting age to 0.'
       @age = 0
     end
   end
 
-  def amIOld
-    case true
-    when age < 13
+  def am_i_old
+    if age < 13
       puts 'You are young.'
-    when age >= 13 && age < 18
+    elsif age >= 13 && age < 18
       puts 'You are a teenager.'
     else
       puts 'You are old.'
     end
   end
 
-  def yearPasses
+  def year_passes
     @age += 1
   end
+end
+
+T = gets.to_i
+
+(1..T).each do |_i|
+  age = gets.to_i
+  p = Person.new(age)
+  p.am_i_old
+
+  (1..3).each { |_j| p.year_passes }
+
+  p.am_i_old
+  puts ''
 end

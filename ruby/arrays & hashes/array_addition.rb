@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Arrays provide a variety of methods that allow to add elements to them.
 
 # * push allows one to add an element to the end of the list.

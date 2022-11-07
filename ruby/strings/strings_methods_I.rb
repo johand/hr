@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Text info can be read from varied sources and is often unsuitable for direct
 # processing or usage by core functions. This necessitates methods for
 # post-processing and data-fixing. In this tutorial, we'll learn how to remove

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # In this tutorial, we'll learn about the methods in String class that help us
 # to search and replace portions of the string based on a text or pattern.
 

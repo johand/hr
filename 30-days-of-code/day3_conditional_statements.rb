@@ -48,17 +48,12 @@
 
 # Sample Case 1: n == 24
 
-# n > 20 and n s even, so it isn't weird. Thus, we print Not Weird.
+# n > 20 and n is even, so it isn't weird. Thus, we print Not Weird.
 
 N = gets.to_i
 
-case true
-when N.odd?
+if N.odd? || (N.even? && (6..20).cover?(N))
   puts 'Weird'
-when N.even? && (2..5).cover?(N)
-  puts 'Not Weird'
-when N.even? && (6..20).cover?(N)
-  puts 'Weird'
-when N.even? && N > 20
+elsif (N.even? && (2..5).cover?(N)) || (N.even? && N > 20)
   puts 'Not Weird'
 end

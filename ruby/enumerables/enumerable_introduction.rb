@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # In control structures tutorial, we learned about various methods to iterate
 # over a collection like unless, loop and the most commonly used each method.
 

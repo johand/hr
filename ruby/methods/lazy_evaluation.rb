@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Lazy evaluation is an evaluation strategy that delays the assessment of an
 # expression until its value is needed.
 
@@ -61,7 +63,7 @@ def palindrome?(num)
   num == num.reverse
 end
 
-palindromic = ->(num) do
+palindromic = lambda do |num|
   2.upto(Float::INFINITY).lazy.select { |n| n if palindrome?(n) && prime?(n) }
    .first(num)
 end

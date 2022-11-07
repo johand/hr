@@ -32,5 +32,5 @@
 
 n = gets.to_i
 
-arr = gets.rstrip.split(' ').map(&:to_i).join(' ').reverse
+arr = gets.rstrip.split.map(&:to_i).join(' ').reverse
 puts arr

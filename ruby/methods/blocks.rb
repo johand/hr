@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Higher order functions are one of the key components of functional
 # programming.
 

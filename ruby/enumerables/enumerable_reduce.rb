@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # A common scenario that arises when using a collection of any sort, is to get
 # perform a single type of operation with all the elements and collect the
 # result.
@@ -46,5 +48,5 @@
 # => 151200
 
 def sum_terms(n)
-  (1..n).reduce(0) { |a, num| a + (num * num + 1) }
+  (1..n).reduce(0) { |a, num| a + ((num * num) + 1) }
 end

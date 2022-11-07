@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Array collections offer various ways to access their elements.
 
 # The positions are 0 indexed. Objects of the array can be accessed using the []

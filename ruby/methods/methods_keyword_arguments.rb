@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # In our previous challenge, we explored one way to pass a variable number of
 # arguments to our methods. While it may seem handy feature to have, except few
 # circumstances, you are never going to use that many variables for your

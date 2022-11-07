@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # When you index a string, you extract or alter the portions. This is perhaps
 # the most important operation you want to perform on strings. The string class
 # provides a convenient array-like square bracket [] operator, which allows you
