@@ -11,7 +11,7 @@
 # that it deletes any duplicate nodes from the list and returns the head of the
 # updated list.
 
-# Note: The head pointer may be null, indicating that the list is empty. Be sure
+# NOTE: The head pointer may be null, indicating that the list is empty. Be sure
 # to reset your next pointer when performing deletions to avoid breaking the
 # list.
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Beside simple methods to iterate over objects, Ruby Enumerable provides a
 # number of important higher order constructs that we shall explore in further
 # challenges. One of such important methods is collect method, also known as

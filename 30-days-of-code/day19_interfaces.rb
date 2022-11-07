@@ -40,7 +40,7 @@
 # line.
 
 module AdvancedArithmetic
-  def divisor_sum(n)
+  def divisor_sum(num)
     raise NotImplementedError
   end
 end
@@ -48,8 +48,8 @@ end
 class Calculator
   include AdvancedArithmetic
 
-  def divisor_sum(n)
-    (1..n).select { |i| i if (n % i).zero? }.reduce(:+)
+  def divisor_sum(num)
+    (1..num).select { |i| i if (num % i).zero? }.reduce(:+)
   end
 end
 

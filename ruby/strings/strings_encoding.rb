@@ -1,4 +1,5 @@
-# coding: utf-8
+# frozen_string_literal: true
+
 # In Ruby, strings are objects of the String class, which defines a powerful set
 # of operations and methods for manipulating text (e.g., indexing, searching,
 # modifying, etc.). Here are a few easy ways to create Strings:

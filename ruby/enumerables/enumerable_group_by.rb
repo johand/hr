@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Another function often used with data collections is one which groups the
 # elements according to some evaluation result.
 
@@ -30,5 +32,5 @@
 #                                            ["Mohammad", 60]]}
 
 def group_by_marks(marks, pass_marks)
-  marks.group_by { |k, v| v < pass_marks ? 'Failed' : 'Passed' }
+  marks.group_by { |_k, v| v < pass_marks ? 'Failed' : 'Passed' }
 end

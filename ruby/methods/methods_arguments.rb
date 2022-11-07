@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # In our previous challenge, we learned about methods and how they help us to
 # abstract similar computations into logical chunks of code that otherwise would
 # be very clumsy and difficult to manage. Methods, in a way, also behave like a

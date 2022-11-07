@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This is a bonus question. Feel free to skip to the next challenge.
 
 # HackerRank is written in RoR and we have various classes defined in it. Some

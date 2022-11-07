@@ -83,7 +83,7 @@
 arr = Array.new(6)
 
 6.times do |i|
-  arr[i] = gets.rstrip.split(' ').map(&:to_i)
+  arr[i] = gets.rstrip.split.map(&:to_i)
 end
 
 sum = []
@@ -97,7 +97,7 @@ arr.each_with_index do |row, ri|
     top = arr[ri][ci] + arr[ri][ci + 1] + arr[ri][ci + 2]
     center = arr[ri + 1][ci + 1]
     bottom = arr[ri + 2][ci] + arr[ri + 2][ci + 1] + arr[ri + 2][ci + 2]
-    sum << top + center + bottom
+    sum << (top + center + bottom)
   end
 end
 

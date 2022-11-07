@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # You've updated the score of every HackerRank user who participated in a
 # contest. Sometimes, HackerRank admins also participate in a given contest but
 # care is taken to ensure that their submissions do not get any score and their

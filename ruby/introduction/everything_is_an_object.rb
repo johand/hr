@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Everything is an object in Ruby. For instance, if you type
 # print self
 

@@ -59,10 +59,8 @@ t = gets.to_i
 
 t.times do |_t_itr|
   nk = gets.rstrip.split
-
   n = nk[0].to_i
-
   k = nk[1].to_i
 
-  puts k - 1 | k <= n ? k - 1 : k - 2
+  puts (k - 1) | k <= n ? k - 1 : k - 2
 end

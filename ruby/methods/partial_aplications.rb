@@ -1,4 +1,5 @@
-# coding: utf-8
+# frozen_string_literal: true
+
 # In Partial Application, we create a lambda that takes a parameter and returns
 # a lambda that does something with it
 
@@ -28,13 +29,13 @@
 # Here, combination is a variable that stores a partial application which
 # computes combination nCr
 
-combination = ->(n) do
-  ->(r) do
+combination = lambda do |n|
+  lambda do |r|
     (n - r + 1..n).reduce(:*) / (1..r).reduce(:*)
   end
 end
 
 n = gets.to_i
 r = gets.to_i
-nCr = combination.(n)
-puts nCr.(r)
+ncr = combination.call(n)
+puts ncr.call(r)

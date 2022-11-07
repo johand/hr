@@ -12,8 +12,8 @@
 
 # A colleague has written that function, and your task is to design 3 separated
 # unit tests, testing if the function behaves correctly. The implementation in
-# Python is listed below (Implementations in other languages can be found in the
-# code template):
+# Python is listed below (Implementations in other languages can be found in
+# the code template):
 
 # def minimum_index(seq):
 #     if len(seq) == 0:
@@ -29,8 +29,8 @@
 # Another co-worker has prepared functions that will perform the testing and
 # validate returned results with expectations. Your task is to implement 3
 # classes that will produce test data and the expected results for the testing
-# functions. More specifically: function get_array() in TestDataEmptyArray class
-# and functions get_array() and get_expected_result() in classes
+# functions. More specifically: function get_array() in TestDataEmptyArray
+# class and functions get_array() and get_expected_result() in classes
 # TestDataUniqueValues and TestDataExactlyTwoDifferentMinimums following the
 # below specifications:
 
@@ -39,15 +39,17 @@
 
 # * get_array() method in class TestDataUniqueValues has to return an array of
 #   size at least 2 with all unique elements, while method get_expected_result()
-#   of this class has to return the expected minimum value index for this array.
+#   of this class has to return the expected minimum value index for this
+#   array.
 
-# * get_array() method in class TestDataExactlyTwoDifferentMinimums has to return
-#   an array where there are exactly two different minimum values, while method
-#   get_expected_result() of this class has to return the expected minimum value
-#   index for this array.
+# * get_array() method in class TestDataExactlyTwoDifferentMinimums has to
+#   return an array where there are exactly two different minimum values, while
+#   method get_expected_result() of this class has to return the expected
+#   minimum value index for this array.
 
 # Take a look at the code template to see the exact implementation of functions
 # that your colleagues already implemented.
+
 
 def minimum_index(seq):
     if len(seq) == 0:
@@ -60,14 +62,14 @@ def minimum_index(seq):
 
     return min_idx
 
-class TestDataEmptyArray(object):
 
+class TestDataEmptyArray:
     @staticmethod
     def get_array():
         return []
 
-class TestDataUniqueValues(object):
 
+class TestDataUniqueValues:
     @staticmethod
     def get_array():
         return [1, 2]
@@ -77,8 +79,8 @@ class TestDataUniqueValues(object):
         lst = [1, 2]
         return lst.index(min(lst))
 
-class TestDataExactlyTwoDifferentMinimums(object):
 
+class TestDataExactlyTwoDifferentMinimums:
     @staticmethod
     def get_array():
         return [1, 1, 2]
@@ -118,6 +120,7 @@ def TestiWithExactyTwoDifferentMinimums():
     expected_result = TestDataExactlyTwoDifferentMinimums.get_expected_result()
     result = minimum_index(seq)
     assert result == expected_result
+
 
 TestWithEmptyArray()
 TestWithUniqueValues()

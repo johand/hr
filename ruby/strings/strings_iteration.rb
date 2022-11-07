@@ -1,4 +1,5 @@
-# coding: utf-8
+# frozen_string_literal: true
+
 # In our encoding tutorial, we learned about the different ways Ruby 1.8 and
 # Ruby 1.9 (and higher versions) represent strings internally. The major
 # difference is a wide range of encoding (non-ascii) support in the later

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Lambdas are anonymous functions. Lambdas in Ruby are objects of the class
 # Proc.
 # They are useful in most of the situations where you would use a proc.
@@ -92,10 +94,14 @@ input_number_1 = gets.to_i
 input_number_2 = gets.to_i
 input_hash = eval(gets)
 
-a = square.(input_number_1)
-b = plus_one.(input_number_2)
-c = into_2.(input_number_1)
-d = adder.(input_number_1, input_number_2)
-e = values_only.(input_hash)
+a = square.call(input_number_1)
+b = plus_one.call(input_number_2)
+c = into_2.call(input_number_1)
+d = adder.call(input_number_1, input_number_2)
+e = values_only.call(input_hash)
 
-p a; p b; p c; p d; p e
+p a
+p b
+p c
+p d
+p e

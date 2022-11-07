@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # In our previous challenges, we explored some ways to pass arguments to our
 # methods; however, they were limited in terms of the number of arguments we can
 # pass to them. Using default parameters allows us to lower the number of

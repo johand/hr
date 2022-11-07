@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The array class has various methods of removing elements from the array.
 
 # Let's look at the array

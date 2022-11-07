@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # In the previous challenge, we learned about each method being central to all
 # of the methods provided by Enumerable class. One of such useful methods is
 # each_with_index which allows you to iterate over items along with an index

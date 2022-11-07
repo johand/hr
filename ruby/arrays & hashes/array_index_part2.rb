@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Here are some other ways to access array objects in Ruby.
 
 # To access the elements from the end of the list, we can use negative indices.

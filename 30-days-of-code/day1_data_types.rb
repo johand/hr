@@ -17,7 +17,7 @@
 # 3. Concatenate s with the string you read as input and print the result on a
 #    new line.
 
-# Note: If you are using a language that doesn't support using for string
+# NOTE: If you are using a language that doesn't support using for string
 # concatenation (e.g.: C), you can just print one variable immediately following
 # the other on the same line. The string provided in your editor must be printed
 # first, immediately followed by the string you read as input.
@@ -56,6 +56,10 @@
 # You will not pass this challenge if you attempt to assign the Sample Case
 # values to your variables instead of following the instructions above and
 # reading input from stdin.
+
+i = 4
+d = 4.0
+s = 'HackerRank '
 
 int = gets.to_i
 double = gets.to_f

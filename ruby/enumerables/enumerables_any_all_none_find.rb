@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Ruby offers various enumerables on collections that check for validity of the
 # objects within it.
 
@@ -57,20 +59,20 @@ def func_any(hash)
   # Check and return true if any key object within the hash is of the type
   # Integer
   # If not found, return false.
-  hash.any? { |k, v| k.is_a? Integer }
+  hash.any? { |k, _v| k.is_a? Integer }
 end
 
 def func_all(hash)
   # Check and return true if all the values within the hash are Integers and are
   # < 10
   # If not all values satisfy this, return false.
-  hash.all? { |k, v| v.is_a?(Integer) && v < 10 }
+  hash.all? { |_k, v| v.is_a?(Integer) && v < 10 }
 end
 
 def func_none(hash)
   # Check and return true if none of the values within the hash are nil
   # If any value contains nil, return false.
-  hash.none? { |k, v| v.nil? }
+  hash.none? { |_k, v| v.nil? }
 end
 
 def func_find(hash)

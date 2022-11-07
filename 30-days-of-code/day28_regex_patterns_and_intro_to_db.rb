@@ -48,11 +48,8 @@ result = []
 
 N.times do |_n_itr|
   first_name_email_id = gets.rstrip.split
-
   first_name = first_name_email_id[0].to_s.rstrip
-
   email_id = first_name_email_id[1].to_s.rstrip
-
   result << first_name if email_id =~ /@gmail\.com$/
 end
 

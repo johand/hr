@@ -6,7 +6,7 @@
 # meal price being added as tip), and tax percent (the percentage of the meal
 # price being added as tax) for a meal, find and print the meal's total cost.
 
-# Note: Be sure to use precise values for your calculations, or you may end up
+# NOTE: Be sure to use precise values for your calculations, or you may end up
 # with an incorrectly rounded result!
 
 # Input Format
@@ -37,11 +37,11 @@
 def solve(meal_cost, tip_percent, tax_percent)
   tip = meal_cost * (tip_percent.to_f / 100)
   tax = meal_cost * (tax_percent.to_f / 100)
-  total_cost = (meal_cost + tip + tax).round
-  total_cost
+  (meal_cost + tip + tax).round
 end
 
 meal_cost = gets.to_f
 tip_percent = gets.to_i
 tax_percent = gets.to_i
+
 p solve(meal_cost, tip_percent, tax_percent)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # A method may take zero or more parameters as input. To demonstrate this, we
 # look at the asserts we use on HackerRank. Sometimes, we have to check whether
 # a given number a is within the range b and c (where b c, and both inclusive ).

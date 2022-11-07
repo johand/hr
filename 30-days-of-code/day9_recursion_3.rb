@@ -5,7 +5,7 @@
 # Write a factorial function that takes a positive integer, N as a parameter and
 # prints the result of N!(factorial).
 
-# Note: If you fail to use recursion or fail to name your recursive function
+# NOTE: If you fail to use recursion or fail to name your recursive function
 # factorial or Factorial, you will get a score of 0.
 
 # Input Format
@@ -42,8 +42,11 @@
 # the value from factorial(2) to step 1, we get factorial(3) = 3 x 2 x 1 =
 # 6. Thus, we print 6 as our answer.
 
-def factorial(n)
-  return 1 if n == 1
+def factorial(num)
+  return num if num < 2
 
-  n * factorial(n - 1)
+  num * factorial(num - 1)
 end
+
+num = gets.strip.to_i
+puts factorial(num)
