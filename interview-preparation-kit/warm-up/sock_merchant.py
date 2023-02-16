@@ -64,4 +64,7 @@ def sock_merchant(_n, ar):
     return pairs
 
 
-print(sock_merchant(8, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
+n = int(input().strip())
+ar = list(map(int, input().rstrip().split()))
+
+print(sock_merchant(n, ar))

@@ -95,6 +95,7 @@ def jumping_on_clouds(c):
     return steps
 
 
-print(jumping_on_clouds([0, 0, 1, 0, 0, 1, 0]))
-print(jumping_on_clouds([0, 0, 0, 0, 1, 0]))
-print(jumping_on_clouds([0, 1, 0, 0, 0, 1, 0]))
+n = int(input().strip())
+c = list(map(int, input().rstrip().split()))
+
+print(jumping_on_clouds(c))

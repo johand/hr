@@ -86,4 +86,7 @@ def counting_valleys(_steps, path):
     return valleys
 
 
-print(counting_valleys(8, "UDDDUDUU"))
+steps = int(input().strip())
+path = input()
+
+print(counting_valleys(steps, path))
