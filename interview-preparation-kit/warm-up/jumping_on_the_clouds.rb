@@ -93,10 +93,6 @@ def jumping_on_clouds(c)
   steps
 end
 
-# n = gets.strip.to_i
+c = gets.rstrip.split.map(&:to_i)
 
-# c = gets.rstrip.split.map(&:to_i)
-
-p jumping_on_clouds([0, 0, 1, 0, 0, 1, 0]) # => 4
-p jumping_on_clouds([0, 0, 0, 0, 1, 0]) # => 3
-p jumping_on_clouds([0, 1, 0, 0, 0, 1, 0]) # => 3
+puts jumping_on_clouds(c)
