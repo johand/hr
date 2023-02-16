@@ -95,7 +95,6 @@ def jumping_on_clouds(c):
     return steps
 
 
-n = int(input().strip())
 c = list(map(int, input().rstrip().split()))
 
 print(jumping_on_clouds(c))
